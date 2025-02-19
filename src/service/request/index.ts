@@ -2,9 +2,9 @@
 import axios from 'axios'
 import type { AxiosInstance } from 'axios'
 import type { IMyRequestConfig } from './types'
-import $router from '@/router/index'
+// import $router from '@/router/index'
 import gableStorage from '@/utils/storage'
-
+import { ElLoading } from 'element-plus'
 let loading: any = null
 let errorLock = 1 // 确保只弹出一个错误
 
@@ -21,11 +21,11 @@ class GabRequest {
         const token = gableStorage.get('token') || ''
         const userInfo = gableStorage.get('user') || ''
 
-        config.headers.token = token
-        config.headers['Content-Type'] = 'application/x-www-form-urlencoded'
+        // config.headers.token = token
+        config.headers['Content-Type'] = 'application/json'
 
         if (!token || !userInfo) {
-          $router.push('/login')
+          // $router.push('/login')
         }
 
         if (config.data) {
@@ -50,7 +50,7 @@ class GabRequest {
         /**
          * 响应拦截的回调，此函数必须有返回值
          */
-        loading.close()
+        // loading.close()
 
         // token 自动更新
         // 刷新token
@@ -92,7 +92,9 @@ class GabRequest {
             errorLock = 1
           },
         })
-        loading.close()
+        console.log(err)
+
+        // loading.close()
       },
     )
     // 可针对不同实例创建额外的拦截器
