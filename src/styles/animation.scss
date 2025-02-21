@@ -1,0 +1,41 @@
+@keyframes enlarge {
+  from {
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    width: 80vw;
+    height: 80vh;
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  to {
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    width: 80vw;
+    height: 80vh;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shrink {
+  from {
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    width: 80vw;
+    height: 80vh;
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    width: 80vw;
+    height: 80vh;
+    opacity: 0;
+    transform: scale(0.1);
+  }
+}

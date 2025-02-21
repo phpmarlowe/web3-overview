@@ -1,0 +1,69 @@
+.font-lg {
+  font-size: $font-lg !important;
+}
+.font-md {
+  font-size: $font-md !important;
+}
+
+.font-sm {
+  font-size: $font-sm !important;
+}
+
+.number-lg {
+  font-size: $number-lg !important;
+}
+
+.number-md {
+  font-size: $number-md !important;
+}
+
+.number-sm {
+  font-size: $number-sm !important;
+}
+
+.tech {
+  font-family: Technology;
+}
+
+.hanzi {
+  font-family: Hiragino;
+}
+.shuzi {
+  font-family: DINPro;
+}
+span.click-detial {
+  color: #00b4ed;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ga-pointer {
+  cursor: pointer;
+}
+
+// panlebox
+.sm-box {
+  height: 33vh;
+}
+
+.md-box {
+  height: calc(67vh - 0.9rem);
+}
+
+.lg-box {
+  height: calc(100vh - 0.8rem); // 没有与其他box之间的 margin
+}
+
+.text-ellipsis {
+  width: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.text-ellipsis_ {
+  width: 2.4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
