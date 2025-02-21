@@ -229,3 +229,34 @@ export const getTokenAccountsByOwner = (token) => {
     },
   })
 }
+
+export const getTokenAccountsByDelegate = () => {
+  return gabRequest.post({
+    url: ``,
+    data: {
+      jsonrpc: '2.0',
+      id: 1,
+      method: 'getTokenAccountsByDelegate',
+      params: [
+        'VaxZxmFXV8tmsd72hUn22ex6GFzZ5uq9DVJ5wA5pump',
+        {
+          programId: 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA',
+        },
+        {
+          encoding: 'jsonParsed',
+        },
+      ],
+    },
+  })
+}
+export const getProgramAccounts = () => {
+  return gabRequest.post({
+    url: ``,
+    data: {
+      jsonrpc: '2.0',
+      id: '1',
+      method: 'getProgramAccounts',
+      params: ['TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA'],
+    },
+  })
+}

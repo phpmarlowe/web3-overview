@@ -14,6 +14,8 @@
     getBalance,
     getBlock,
     getBlockCommitment,
+    getProgramAccounts,
+    getTokenAccountsByDelegate,
     getTokenAccountsByOwner,
   } from './service/api/helius'
   const APIKEY = import.meta.env.WEB3_API_KEY
@@ -40,9 +42,12 @@
   // //   console.log(res)
   // // })
   // // getBlockCommitment()
-  // getTokenAccountsByOwner('7WzRCGXYCXBCTvDovjzzVz4Vdo6Wq8FDogpQPPKdYxNj').then((res) => {
-  //   console.log(res)
-  // })
+  getTokenAccountsByOwner('7WzRCGXYCXBCTvDovjzzVz4Vdo6Wq8FDogpQPPKdYxNj').then((res) => {
+    console.log(res)
+  })
+  // getTokenAccountsByDelegate()
+  // getProgramAccounts()
+  3HZrwUZQDbFWziqHGaHLJgKNhSye4czq2KcKajgBgHcBEWX1fkwH9ZMqYd3cWGkko72WMfpQvQzw9XTaZTL5t96u
 </script>
 
 <style scoped>
